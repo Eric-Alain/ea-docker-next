@@ -11,26 +11,26 @@ export default function Home() {
 
 			<main className={styles.main}>
 				<h1 className={styles.title}>
-					Eric says: welcome to <a href='https://nextjs.org'>Next.js</a> on Docker!
+					<div className={styles.titleSpan}>Eric says:</div>
+					Welcome to <a href='https://nextjs.org'>Next.js</a> on Docker!
 				</h1>
 
 				<div className={styles.grid}>
 					<div className={styles.card}>
-						<h3>With extra flavor</h3>
+						<h3>Hello Juan!</h3>
+						<hr/>
+						<p>Pleased to meet you!</p>
+					</div>
+					<div className={styles.card}>
+						<h3>Node.js app with RedHat seasoning</h3>
 						<p>Deployed to Redhat Openshift sandbox.</p>
 					</div>
 					<div className={styles.card}>
 						<h3>Was fun to figure out</h3>
-						<p>Not as easy as initially foreseen.</p>
+						<p>Containers can be tricky, but very rewarding.</p>
 					</div>
 				</div>
 			</main>
-
-			<footer className={styles.footer}>
-				<a href='https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app' target='_blank' rel='noopener noreferrer'>
-					Powered by <img src='/vercel.svg' alt='Vercel Logo' className={styles.logo} />
-				</a>
-			</footer>
 		</div>
 	);
 }
